@@ -1,12 +1,12 @@
 import React from "react";
+import "../CSS/Home.css";
 import { Navbar } from "./Navbar";
 import { Products } from "./Products";
 
 
 export const Home = () => {
     return (
-        <div>
-            Home
+        <div className='wrapper'>
             <Navbar/>
             <Products/>
         </div>
