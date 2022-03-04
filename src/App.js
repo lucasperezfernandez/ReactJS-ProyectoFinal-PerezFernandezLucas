@@ -6,6 +6,7 @@
 //npm install react-router-dom
 import React, { Component } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { AddProducts } from "./components/AddProducts";
 import { Home } from "./components/Home";
 
 export class App extends Component {
@@ -15,7 +16,7 @@ export class App extends Component {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home/>} />
-            {/* MINUTO 8:17 VIDEONUEVO */}
+            <Route path="/addproducts" element= {<AddProducts/>}></Route>
           </Routes>
         </BrowserRouter>
       </div>
